@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import {
 	HomeOutlined,
 	SearchOutlined,
@@ -59,7 +59,7 @@ const Footer = () => {
 				</li>
 				<li>
 					<NavLink
-						to='/problemas'
+						to='/ejemplos'
 						activeStyle={{
 							fontWeight: 'bold',
 							color: '#ecb365',
@@ -68,7 +68,7 @@ const Footer = () => {
 							textAlign: 'center',
 						}}>
 						<FunctionOutlined style={{ fontSize: '20px', color: '#fefefe' }} />
-						Problemas
+						Ejemplos
 					</NavLink>
 				</li>
 				<li>

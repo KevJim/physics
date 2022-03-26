@@ -14,13 +14,13 @@ const categories = [
 		id: 2,
 		icon: <FunctionOutlined style={{ fontSize: '32px', color: '#fefefe' }} />,
 		title: 'Problemas',
-		to: '/problemas',
+		to: '/ejemplos',
 	},
 	{
 		id: 3,
 		icon: <ExperimentOutlined style={{ fontSize: '32px', color: '#fefefe' }} />,
 		title: 'Simuladores',
-		to: '/problemas',
+		to: '/simuladores',
 	},
 ];
 

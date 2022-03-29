@@ -18,5 +18,10 @@
 
 .category-card--text {
 	font-size: 1.7rem;
-	color: #fefefe
+	color: #fefefe;
+	text-align: justify;
+} 
+.img {
+	width: 18rem;
+	height: 9rem;
 }

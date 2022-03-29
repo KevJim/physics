@@ -12,7 +12,7 @@ const categories = [
 	{
 		id: 1,
 		icon: <LineChartOutlined style={{ fontSize: '32px', color: '#fefefe' }} />,
-		title: 'Ejemplo Plano Cartesiano',
+		title: 'Ejemplo Tiro Vertical',
 		to: '/ejemplos',
 	},
 	{

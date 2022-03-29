@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './containers/Home';
 import Conceptos from './containers/Conceptos';
+import Concepto from './containers/Concepto';
 import Ejemplos from './containers/Ejemplos';
 import Ejemplo from './containers/Ejemplo';
 
@@ -20,6 +21,13 @@ function App() {
 						path='/ejemplos/:id'
 						render={({ match }) => {
 							return <Ejemplo id={match.params.id} />;
+						}}
+					/>
+					<Route
+						exact
+						path='/conceptos/:id'
+						render={({ match }) => {
+							return <Concepto id={match.params.id} />;
 						}}
 					/>
 				</Switch>

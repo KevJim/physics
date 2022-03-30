@@ -86,5 +86,31 @@
             "procedimiento" : "d = 20s * 30m/s = 600m",
             "resultado" : "600 metros"
         }
+    ],
+    "Simuladores":[
+        {
+            "id_simulador" : 1,
+            "tema" : "Fuerza de gravedad",
+            "descripcion" : "Relaciona la fuerza gravitacional con las masas de objetos y la distancia entre los objetos. Agrega explicación de la tercera ley de Newton para las fuerzas gravitacionales.",
+            "url" : "https://phet.colorado.edu/sims/html/gravity-force-lab-basics/latest/gravity-force-lab-basics_es.html"
+        },
+        {
+            "id_simulador" : 2,
+            "tema" : "Vectores",
+            "descripcion" : "Describe un vector y todos los elementos de un vector. También puede realizar operaciones con vectores ya sea suma o resta de vectores, etc.",
+            "url" : "https://phet.colorado.edu/sims/html/vector-addition/latest/vector-addition_es.html"
+        },
+        {
+            "id_simulador" : 3,
+            "tema" : "Fuerza",
+            "descripcion" : "Determina la fuerza neta en un objeto con más de una fuerza sobre él. Además identifica cuando las fuerzas están equilibradas o no.",
+            "url" : "https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_es.html"
+        },
+        {
+            "id_simulador" : 4,
+            "tema" : "Velocidad y Aceleracion",
+            "descripcion" : "Predice cuantitativamente cómo una fuerza externa afectará a la velocidad y la dirección del movimiento de un objeto.",
+            "url" : "https://phet.colorado.edu/sims/cheerpj/motion-series/latest/motion-series.html?simulation=forces-and-motion&locale=es"
+        }
     ]
 }

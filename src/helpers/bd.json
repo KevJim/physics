@@ -1,42 +1,50 @@
 {
-    "definiciones":[
+    "Conceptos":[
         {
             "id_definicion" : 1,
+            "url_imagen" : "https://concepto.de/wp-content/uploads/2018/08/f%C3%ADsica-e1534938838719.jpg",
             "nombre" : "Física",
-            "definicion" : "Es la ciencia natural que estudia los componentes fundamentales del universo, la energía, la materia, la fuerza y el movimiento"
+            "definicion" : "Es una ciencia exacta que estudia cómo funciona el universo al tomar en cuenta cuatro propiedades fundamentales que son la energía, la materia, el tiempo y el espacio, cómo interactuán y se afectan unas a otras."
         },
         {
             "id_definicion" : 2,
+            "url_imagen" : "https://matemovil.com/wp-content/uploads/2020/01/movimiento-rectil%C3%ADneo-uniformemente-variado-mruv.jpg",
             "nombre" : "M.R.U",
             "definicion" : "El movimiento rectilíneo uniforme es cuando un objeto viaja a una trayectoria recta a una velocidad constante, dado que su aceleración es nula"
         },
         {
             "id_definicion" : 3,
+            "url_imagen" : "http://saberesyciencias.com.mx/wp-content/uploads/2013/04/29.jpg",
             "nombre" : "Gravedad",
             "definicion" : "Según la NASA, la gravedad es la fuerza con la que un planeta u otro cuerpo atrae objetos hacia su centro. La fuerza de gravedad mantiene a todos los planetas en órbita alrededor del sol."
         },
         {
             "id_definicion" : 4,
-            "nombre" : "Plano",
-            "definicion" : ""
+            "url_imagen" : "https://concepto.de/wp-content/uploads/2019/12/tiro-vertical-caida-libre-e1576888788516.jpg",
+            "nombre" : "Tiro Vertical",
+            "definicion" : "Es un tipo de movimiento que es el resultado de arrojar un objeto verticalmente hacia arriba o hacia abajo desde cierta altura h."
         },
         {
             "id_definicion" : 5,
+            "url_imagen" : "http://www.icarito.cl/wp-content/uploads/2012/10/1645144.jpg",
             "nombre" : "Fuerza",
             "definicion" : "Es un fenómeno que modifica el movimiento de un cuerpo o bien lo deforma. Las fuerzas pueden representarse mediante vectores, ya que poseen magnitud y dirección."
         },
         {
             "id_definicion" : 6,
+            "url_imagen" : "http://4.bp.blogspot.com/-vyfEtYOyumk/UkHXfcqvd0I/AAAAAAAAAJo/Py9TL9SV33s/s1600/aceleracion2.jpg",
             "nombre" : "Aceleración",
             "definicion" : "Es una variación de la velocidad de un cuerpo en el tiempo. Como la velocidad es una rapidez y una dirección, solo hay dos maneras para que aceleres: Cambia tu rapidez o cambia tu dirección."
         },
         {
             "id_definicion" : 7,
+            "url_imagen" : "https://i.ytimg.com/vi/qJOdLbMi5hU/maxresdefault.jpg",
             "nombre" : "Velocidad",
             "definicion" : "Es el cambio de posición de un objeto a lo largo del tiempo. Es una magnitud vectorial y se representa mediante flechas que indican la dirección y sentido del movimiento que sigue el cuerpo."
         },
         {
             "id_definicion" : 8,
+            "url_imagen" : "https://concepto.de/wp-content/uploads/2020/12/distancia-e1607813945882.jpg",
             "nombre" : "Distancia",
             "definicion" : "Se refiero a cuanto espacio recorre un objeto durante su movimiento. Por ser una medida de longitud, la distancia se expresa en unidades de metro según el Sistema Internacional de Medidas."
         }
@@ -44,30 +52,30 @@
     "Ejemplos":[
         {
             "id_ejemplo": 1,
-            "tema" : "Plano Cartesiano",
-            "problema":"",
-            "datos" : "",
-            "formula" : "",
-            "procedimiento" : "",
-            "resultado" : ""
+            "tema" : "Tiro Vertical",
+            "problema":"Juan lanza una roca verticalmente hacia arriba con una velocidad 7m/s. Determine en qué tiempo alcanza su altura máxima dicha roca.",
+            "datos" : "Vo = 7m/s , Vf = 0m/s , g = 9.8m/s^2 , t = ?",
+            "formula" : " t = (Vf - Vo) / (-g)",
+            "procedimiento" : " t = (0m/s - 7m/s) / (-9.8m/s^2) = (-7m/s) / (-9.8m/s^2) = 0.71seg",
+            "resultado" : "0.71 segundos"
         },
         {
             "id_ejemplo": 2,
             "tema" : "M.R.U.",
-            "problema":"",
-            "datos" : "",
-            "formula" : "",
-            "procedimiento" : "",
-            "resultado" : ""
+            "problema":"Un tren sale de París a las 6hrs y llega a las 8hrs a Lyon. Su recorrido es en línea recta. La distancia entre la estación de París y la estación de Lyon es de 400km. El tren siempre va a la misma velocidad, sin acelerar ni frenar hasta llegar ak destino ¿A qué velocidad va el tren?",
+            "datos" : "d = 400km , t = 8hrs - 6hrs = 2hrs , v = ?m/s",
+            "formula" : "v = d/t",
+            "procedimiento" : "v = 400 km/2hrs = 200 km/hr",
+            "resultado" : "200 km/hr"
         },
         {
             "id_ejemplo": 3,
             "tema" : "Caída Libre",
-            "problema":"",
-            "datos" : "",
-            "formula" : "",
-            "procedimiento" : "",
-            "resultado" : "" 
+            "problema":"Un objeto cae en caída libre y llega a una velocidad de 150m/s. ¿Cuánto tiempo tardó en caer?",
+            "datos" : "g = 9.8m/s^2 , Vf = 150m/s , Vo = 0m/s , t = ?",
+            "formula" : "t = (Vf - Vo) / g",
+            "procedimiento" : "t = (150m/s - 0 m/s) / (9.8m/s^2) = (150m/s) / (9.8m/s^2) = 15seg",
+            "resultado" : "15 segundos" 
         },
         {
             "id_ejemplo": 4,

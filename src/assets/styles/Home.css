@@ -20,6 +20,10 @@ input {
 	text-align: center;
 }
 
+input:focus {
+	outline: none;
+}
+
 ::placeholder {
 	font-weight: bold;
 	text-align: center;

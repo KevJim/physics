@@ -1,27 +1,37 @@
-.category--card {
+.concept--card {
+	width: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--secondary);
+	margin-bottom: 24px;
+	border-radius: 12px;
 	padding: 20px;
 	height: auto;
 }
 
-.category-card--title {
+.concept-card--title {
 	font-size: 3.5rem;
 	color: var(--font);
 	font-weight: bold;
 }
 
-.category-card--subtitle {
+.concept-card--subtitle {
 	font-size: 2.3rem;
 	color: var(--font);
 	font-weight: 600;
 	margin-bottom: 10px;
 }
 
-.category-card--text {
-	font-size: 1.7rem;
+.concept-card--text {
+	font-size: 1.9rem;
 	color: #fefefe;
-	text-align: justify;
+	text-align: center;
+	line-height: 24px;
 } 
 .img {
 	width: 18rem;
 	height: 9rem;
+	margin-bottom: 12px;
+	border-radius: 12px;
 }

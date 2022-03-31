@@ -29,7 +29,7 @@ const Footer = () => {
 						Home
 					</NavLink>
 				</li>
-				<li>
+				{/* <li>
 					<NavLink
 						activeStyle={{
 							fontWeight: 'bold',
@@ -42,7 +42,7 @@ const Footer = () => {
 						<SearchOutlined style={{ fontSize: '20px', color: '#fefefe' }} />
 						Buscar
 					</NavLink>
-				</li>
+				</li> */}
 				<li>
 					<NavLink
 						to='/conceptos'

@@ -1,16 +1,15 @@
 import React from 'react';
 import db from '../helpers/bd.json';
-import "../assets/styles/Ejemplo.css"
+import '../assets/styles/Ejemplo.css';
 
 const Ejemplo = (props) => {
 	const ejemplos = db.Ejemplos;
 	let id = props.id;
-	const ejemplo = ejemplos.filter((ejemplo) => ejemplo.id_ejemplo == id);
-	console.log('Ejemplo: ', ejemplo);
+	const ejemplo = ejemplos.filter((ejemplo) => ejemplo.id == id);
 	return (
 		<div className='home--container'>
 			<div className='category--card'>
-				<h1 className='category-card--title'>{ejemplo[0].tema}</h1>
+				<h1 className='category-card--title'>{ejemplo[0].title}</h1>
 			</div>
 			<div className='category--card' style={{ flexDirection: 'column' }}>
 				<h3 className='category-card--subtitle'>Problema</h3>

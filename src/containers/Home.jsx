@@ -1,39 +1,47 @@
-import React from 'react';
-import { BookOutlined, FunctionOutlined, ExperimentOutlined } from '@ant-design/icons';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import IconComponent from '../components/Icon';
 import '../assets/styles/Home.css';
-
-const categories = [
-	{
-		id: 1,
-		icon: <BookOutlined style={{ fontSize: '32px', color: '#fefefe' }} />,
-		title: 'Conceptos',
-		to: '/conceptos',
-	},
-	{
-		id: 2,
-		icon: <FunctionOutlined style={{ fontSize: '32px', color: '#fefefe' }} />,
-		title: 'Problemas',
-		to: '/ejemplos',
-	},
-	{
-		id: 3,
-		icon: <ExperimentOutlined style={{ fontSize: '32px', color: '#fefefe' }} />,
-		title: 'Simuladores',
-		to: '/simuladores',
-	},
-];
+import db from '../helpers/bd.json';
 
 const Home = () => {
+	const [item, setItem] = useState([]);
+	const [items, setItems] = useState([]);
+	const [text, setText] = useState('');
+
+	useEffect(() => {
+		const response = db.Conceptos.concat(db.Ejemplos)
+			.concat(db.Simuladores)
+			.sort(() => Math.random() - 0.5);
+		setItem(response);
+		setItems(response);
+	}, []);
+
+	const filter = (event) => {
+		let query = event.target.value;
+		if (!query.length >= 1) {
+			setItem(items);
+		} else {
+			const data = items;
+			const newData = data.filter((item) => {
+				const itemData = item.title.toLowerCase();
+				const textData = text.toLowerCase();
+				return itemData.indexOf(textData) > -1;
+			});
+			setItem(newData);
+			setText(query);
+		}
+	};
+
 	return (
 		<div className='home--container'>
-			<input placeholder='¿Qué estas buscando?' />
-			{categories.map((category) => {
+			<input placeholder='¿Qué estas buscando?' onChange={filter} />
+			{item.map((card) => {
 				return (
-					<div key={category.id} className='category--card'>
-						<Link to={category.to} className='category--card--item'>
-							{category.icon}
-							<p>{category.title}</p>
+					<div className='category--card'>
+						<Link to={`${card.to}/${card.id}`} className='category--card--item'>
+							<IconComponent component={card.icon} />
+							<p>{card.title}</p>
 						</Link>
 					</div>
 				);

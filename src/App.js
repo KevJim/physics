@@ -6,6 +6,8 @@ import Conceptos from './containers/Conceptos';
 import Concepto from './containers/Concepto';
 import Ejemplos from './containers/Ejemplos';
 import Ejemplo from './containers/Ejemplo';
+import Simuladores from './containers/Simuladores';
+import Simulador from './containers/Simulador';
 
 function App() {
 	return (
@@ -28,6 +30,14 @@ function App() {
 						path='/conceptos/:id'
 						render={({ match }) => {
 							return <Concepto id={match.params.id} />;
+						}}
+					/>
+					<Route exact path='/simuladores' component={Simuladores} />
+					<Route
+						exact
+						path='/simuladores/:id'
+						render={({ match }) => {
+							return <Simulador id={match.params.id} />;
 						}}
 					/>
 				</Switch>
